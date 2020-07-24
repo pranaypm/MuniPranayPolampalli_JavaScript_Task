@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/signup.css">
+   <script src="js/signup.js">
+   </script>
+  <title>Registration Page</title>
+<body onload="document.registration.username.focus();">
+
+<form  name="register" onSubmit="return formvalididation();">
+  <div class="main-container">
+    <h1>Registration Form</h1>
+
+  <div class="nameclass" >
+      <input class="nameclass1" type="text"  placeholder="Enter Full Name" name="name" required>
+  </div>
+
+<div class="emailclass" >
+  <input class="emailclass1" type="text" id ="email" placeholder="Enter Email" name="email" required>
+</div>
+
+    <div class="mobile_numberclass">
+      <input class ="mobile_numberclass1"type="text"id="mobilenumber" placeholder="Enter mobile Number" name="mobile number"  required>
+    </div>
+
+
+
+    <div class="genderclass" >
+      <label for="gender">Gender :</label>
+      <input class="gender" type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input class="gender" type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input class="gender" type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+    </div>
+
+
+    <div class="passwordclass">
+    <div class="password1_div">
+        <input class="password1" type="password"  placeholder="Enter Password" name="password1" required>
+    </div>
+    <div class="password2_div">
+        <input class="password2" type="password" placeholder="Repeat Password" name="password2" required>
+    </div>
+    </div>
+
+    <div class="buttonsclass">
+      <input class="submitbuttonclass" type="submit" name="submitbutton" value="submit">
+      <button class="cancelbuttonclass" type="button" name="cancelbutton" >cancel</button>
+      </div>
+
+
+</div>
+</form>
+
+</body>
+</html>
